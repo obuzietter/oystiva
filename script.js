@@ -1,10 +1,19 @@
-const menuBtn = document.getElementById("menu-btn");
-const navLinks = document.querySelector(".nav-links");
+// ===========================
+// HAMBURGER MENU
+// ===========================
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
 
-menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
+if (hamburger) {
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+}
 
+
+// ===========================
+// CONTACT FORM VALIDATION
+// ===========================
 const form = document.getElementById("contactForm");
 
 if (form) {
@@ -29,6 +38,10 @@ if (form) {
     });
 }
 
+
+// ===========================
+// SMOOTH SCROLL
+// ===========================
 const scrollLinks = document.querySelectorAll('a[href^="#"]');
 
 scrollLinks.forEach(link => {
