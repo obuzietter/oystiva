@@ -40,3 +40,4 @@ scrollLinks.forEach(link => {
         }
     });
 });
+
